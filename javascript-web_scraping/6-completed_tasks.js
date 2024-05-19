@@ -11,8 +11,7 @@ request(url, (error, response, body) => {
     for (let i = 0; i < zor.length; i++) {
       if (zor[i].completed && !obj[zor[i].userId]) {
         obj[zor[i].userId] = 1;
-      }
-      else if (zor[i].completed) {
+      } else if (zor[i].completed) {
         obj[zor[i].userId] += 1;
       }
     }
